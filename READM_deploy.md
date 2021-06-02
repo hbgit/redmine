@@ -78,6 +78,7 @@ $ heroku addons:create heroku-postgresql -a APP_NAME
 Link to remote (heroku)
 
 $ heroku git:remote -a APP_NAME
+$ heroku stack:set heroku-18
 
 Deploy to Heroku these command
 
