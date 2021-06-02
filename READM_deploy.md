@@ -93,12 +93,18 @@ $ heroku run rake redmine:load_default_data
 
 ===================================
 
-Logging heroku via bash:
-I can do with this commands
+>> Logging heroku via bash:
 
-heroku login
-heroku run bash -a APPNAME
-$ cd app
+$ heroku login
+
+>> After deploy
+
+$ heroku run bash -a APPNAME
+
+$ bundle install --without development test --no-deployment
+
+$ bundle exec rake redmine:plugins NAME=redmine_agile RAILS_ENV=production
+
 
 
 
